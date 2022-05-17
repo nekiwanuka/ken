@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEK' BLOG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">NEK'S BLOG</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact Me</a>
+
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<style>
+    .carousel-item{
+        height: 25rem;
+        background: grey;
+        color: rgb(249, 252, 255);
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    .container{
+        position: absolute;
+        bottom: 0px;
+        right: 30px;
+        left: px;
+        padding-top: 30px;
+    
+    }
+</style>
+<div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+    
+     <ol carousel-indicator>
+        <li hidden carousel data-bs-target="#mycarousel"data-bs-slide-to="0" class="active">
+        </li>
+        <li hidden carousel data-bs-target="#mycarousel"data-bs-slide-to="1">
+        </li>
+    </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image:url(./img/slide1.jpg);">
+        <div class="container">
+            <h5>Learning is one of my hobbies </h5>
+
+        </div>
+    </div>
+    <div class="carousel-item" style="background-image:url(./img/slide2.jpg);">
+        <div class="container">
+            <h6>The coder's space</h6>
+
+        </div>
+    </div>
+  </div>
+  <a href="#mycarousel" class="carousel control previous" role="button"data-bs-slide="prev">
+      <span class="class sr-only"></span>
+      <span class="carousel control previuos icon"aria-hidden="true"></span>
+      <a href="#mycarousel" class="carousel control next" role="button"data-bs-slide="next">
+        <span class="class sr-only"></span>
+        <span class="carousel control next icon"aria-hidden="true"></span>
+      
+  </a>
+</div>
+
+<p>CONTACT ME</p> 
+<div class="card mb-3" style="max-width: 900px;">
+  <div class="row g-5">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Contact Me</h5>
+        <p class="card-text">
+              <!-- Name input -->
+    <div class="mb-3">
+      <label class="form-label" for="name">Name</label>
+      <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+      <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+    </div>
+
+    <!-- Email address input -->
+    <div class="mb-3">
+      <label class="form-label" for="emailAddress">Email Address</label>
+      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+    </div>
+
+    <!-- Message input -->
+    <div class="mb-3">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+      <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+    </div>
+        </p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"></script>
+</html>
